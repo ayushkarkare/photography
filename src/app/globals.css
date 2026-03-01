@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-mat text-cream antialiased;
+    background-image: 
+      linear-gradient(to right, rgba(232,242,240,0.22) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(232,242,240,0.22) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-sticky-yellow text-mat;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-cream;
+  }
+}
+
+@layer components {
+  .photo-print {
+    @apply bg-white p-2 md:p-3 shadow-xl;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.2),
+      0 10px 15px -3px rgba(0, 0, 0, 0.15),
+      0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .sticky-note {
+    @apply p-6 relative;
+    aspect-ratio: 1 / 1;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      2px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .sticky-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  }
+
+  .sticky-note::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.08) 50%);
+  }
+
+  .sticky-note:hover {
+    box-shadow: 
+      0 8px 16px rgba(0, 0, 0, 0.15),
+      0 12px 24px rgba(0, 0, 0, 0.12),
+      4px 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .sticky-note-yellow {
+    @apply sticky-note bg-sticky-yellow text-mat;
+  }
+
+  .sticky-note-pink {
+    @apply sticky-note bg-sticky-pink text-mat;
+  }
+
+  .sticky-note-blue {
+    @apply sticky-note bg-sticky-blue text-mat;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-cream text-mat font-medium 
+           transition-all duration-300 hover:bg-white hover:shadow-lg
+           focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-mat focus-visible:ring-cream;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-cream text-cream font-medium 
+           transition-all duration-300 hover:bg-cream hover:text-mat
+           focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-mat focus-visible:ring-cream;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-mat-dark border border-grid text-cream placeholder:text-cream/50
+           focus:outline-none focus:border-cream/50 transition-colors;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- V6 Horizontal Lockup -->
+  <!-- Icon (super minimal) -->
+  <rect x="35" y="35" width="90" height="90" rx="15" ry="15" fill="none" stroke="currentColor" stroke-width="8"/>
+  <line x1="80" y1="52" x2="80" y2="108" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Wordmark -->
+  <text x="155" y="95" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="500" letter-spacing="8" fill="currentColor">AKARI</text>
+  <text x="157" y="125" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="400" letter-spacing="6" fill="currentColor">STUDIOS</text>
+</svg>
