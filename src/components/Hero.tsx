@@ -47,11 +47,12 @@ export default function Hero() {
               <PhotoPrint
                 src="/work/DSC03920.jpg"
                 alt="Portrait photography sample"
-                width={280}
-                height={350}
+                width={5947}
+                height={3965}
                 rotation={-2}
                 className="w-48 md:w-64 lg:w-72"
                 priority={true}
+                sizes="(max-width: 767px) 192px, (max-width: 1023px) 256px, 288px"
               />
             </motion.div>
 
@@ -64,11 +65,12 @@ export default function Hero() {
               <PhotoPrint
                 src="/work/04381d3d-399b-4d8c-87c3-8a3d94be3ca9.jpg"
                 alt="Creative photography sample"
-                width={260}
-                height={340}
+                width={1280}
+                height={1920}
                 rotation={3}
                 className="w-44 md:w-56 lg:w-64"
                 priority={true}
+                sizes="(max-width: 767px) 176px, (max-width: 1023px) 224px, 256px"
               />
             </motion.div>
 
@@ -81,11 +83,12 @@ export default function Hero() {
               <PhotoPrint
                 src="/work/DSC03958.jpg"
                 alt="Student organization photography"
-                width={240}
-                height={300}
+                width={4047}
+                height={6070}
                 rotation={-1}
                 className="w-40 md:w-52 lg:w-60"
                 priority={true}
+                sizes="(max-width: 767px) 160px, (max-width: 1023px) 208px, 240px"
               />
             </motion.div>
           </div>

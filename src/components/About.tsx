@@ -19,10 +19,11 @@ export default function About() {
             <PhotoPrint
               src="/work/IMG_3316.jpg"
               alt="Ayush Karkare"
-              width={500}
-              height={600}
+              width={3457}
+              height={5184}
               rotation={-1}
-              className="mx-auto lg:mx-0"
+              className="mx-auto lg:mx-0 max-w-md lg:max-w-none"
+              sizes="(max-width: 1023px) 100vw, 45vw"
             />
 
             {/* Gear note sticky */}
