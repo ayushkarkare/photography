@@ -22,7 +22,8 @@ const workItems: WorkItem[] = [
   { id: 7, src: "/work/DSC03808.jpg", alt: "Student organization", width: 5284, height: 3523 },
   { id: 8, src: "/work/DSC03847.jpg", alt: "Event coverage", width: 4525, height: 3017 },
   { id: 9, src: "/work/_DSF1983.jpg", alt: "Creative project", width: 2304, height: 1536 },
-  { id: 10, src: "/work/eba6ca40-9dab-49e1-ba3c-34cf04d746b2.jpg", alt: "Graduation portrait", width: 1024, height: 576 },
+  /* EXIF orientation 8: stored 1024×576, displayed as portrait */
+  { id: 10, src: "/work/eba6ca40-9dab-49e1-ba3c-34cf04d746b2.jpg", alt: "Graduation portrait", width: 576, height: 1024 },
   { id: 11, src: "/work/DSC00428.jpg", alt: "Portrait session", width: 3000, height: 2000 },
   { id: 12, src: "/work/DSC00452.jpg", alt: "Creative portrait", width: 3000, height: 2000 },
   { id: 13, src: "/work/DSC00492.jpg", alt: "Event photography", width: 3000, height: 2000 },
